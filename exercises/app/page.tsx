@@ -27,6 +27,24 @@ const hubItems: HubItem[] = [
     image: "/images/exercise_03.png",
     link: "/exercises/exercise_03",
   },
+  {
+    title: "Exercise 04",
+    description: "Particles with a small noise effect",
+    image: "/images/exercise_04.png",
+    link: "/exercises/exercise_04",
+  },
+  {
+    title: "Exercise 05",
+    description: "Memory game",
+    image: "/images/exercise_05.png",
+    link: "/exercises/exercise_05",
+  },
+  {
+    title: "Exercise 06",
+    description: "Rasterization",
+    image: "/images/exercise_06.png",
+    link: "/exercises/exercise_06",
+  },
 ];
 
 const Exercises = () => {

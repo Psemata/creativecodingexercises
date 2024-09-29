@@ -30,7 +30,7 @@ export default function Exercise01() {
         <Sketch />
       </div>
 
-      <div className="flex justify-end w-full max-w-4xl mt-8">
+      <div className="flex justify-end w-full max-w-4xl mt-8 md:mr-96">
         <Link href="./exercise_02">
           <Button
             variant="outline"

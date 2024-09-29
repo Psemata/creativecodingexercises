@@ -13,7 +13,7 @@ const SketchExercise03: React.FC = () => {
     if (typeof window !== "undefined") {
       sketch = new p5((p: p5) => {
         let raindrops: RainDrop[] = [];
-        const raindropsCount = 30;
+        const raindropsCount = 20;
 
         p.setup = () => {
           p.createCanvas(500, 500);

@@ -27,7 +27,7 @@ export default function Exercise02() {
         <Sketch />
       </div>
 
-      <div className="flex justify-between w-full max-w-4xl mt-8">
+      <div className="flex justify-evenly w-full max-w-4xl mt-8">
         <Link href="./exercise_01">
           <Button
             variant="outline"
