@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
 import p5 from "p5";
+import React, { useEffect, useRef } from "react";
 
 const CANVAS_SIZE = 500;
 const IMAGE_COUNT = 4;

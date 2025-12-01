@@ -1,7 +1,7 @@
+import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Home } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 const Sketch = dynamic(() => import("@/components/sketch_exercise_05"), {
   ssr: false,

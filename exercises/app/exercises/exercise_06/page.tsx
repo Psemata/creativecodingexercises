@@ -1,13 +1,13 @@
+import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Home } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 const Sketch = dynamic(() => import("@/components/sketch_exercise_06"), {
   ssr: false,
 });
 
-export default function Exercise05() {
+export default function Exercise06() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative p-4">
       <Link href="/" className="absolute top-4 left-4 sm:top-8 sm:left-8">

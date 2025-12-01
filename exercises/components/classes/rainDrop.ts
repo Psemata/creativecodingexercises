@@ -37,7 +37,7 @@ export default class RainDrop {
 
     this.y += this.speed;
     if (this.y > this.p.height) {
-        this.y = this.p.random(-3, 1);
+      this.y = this.p.random(-3, 1);
       this.wait = 0;
     }
   }

@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight, Home } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-const Sketch = dynamic(() => import("@/components/sketch_exercise_03"), {
+const Sketch = dynamic(() => import("@/components/sketch_exercise_07"), {
   ssr: false,
 });
 
-export default function Exercise03() {
+export default function Exercise07() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative p-4">
       <Link href="/" className="absolute top-4 left-4 sm:top-8 sm:left-8">
@@ -21,14 +21,14 @@ export default function Exercise03() {
         </Button>
       </Link>
 
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Exercise 03</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-8">Exercise 07</h1>
 
-      <div className=" max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <Sketch />
       </div>
 
       <div className="flex justify-evenly w-full max-w-4xl mt-8">
-        <Link href="./exercise_02">
+        <Link href="./exercise_06">
           <Button
             variant="outline"
             className="text-gray-700 hover:text-gray-900"
@@ -37,7 +37,7 @@ export default function Exercise03() {
             Previous Exercise
           </Button>
         </Link>
-        <Link href="./exercise_04">
+        <Link href="./exercise_08">
           <Button
             variant="outline"
             className="text-gray-700 hover:text-gray-900"

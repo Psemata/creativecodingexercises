@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
 import p5 from "p5";
+import React, { useEffect, useRef } from "react";
 import RainDrop from "./classes/rainDrop";
 
 const SketchExercise03: React.FC = () => {
@@ -12,7 +12,7 @@ const SketchExercise03: React.FC = () => {
 
     if (typeof window !== "undefined") {
       sketch = new p5((p: p5) => {
-        let raindrops: RainDrop[] = [];
+        const raindrops: RainDrop[] = [];
         const raindropsCount = 20;
 
         p.setup = () => {
@@ -25,7 +25,7 @@ const SketchExercise03: React.FC = () => {
         p.draw = () => {
           p.background(235);
 
-          for (let raindrop of raindrops) {
+          for (const raindrop of raindrops) {
             raindrop.fall();
             raindrop.show();
           }

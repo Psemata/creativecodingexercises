@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
 import p5 from "p5";
+import React, { useEffect, useRef } from "react";
 
 const SketchExercise01: React.FC = () => {
   const sketchRef = useRef<HTMLDivElement>(null);

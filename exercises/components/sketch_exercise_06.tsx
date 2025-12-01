@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
 import p5 from "p5";
+import React, { useEffect, useRef } from "react";
 
 const SketchExercise06: React.FC = () => {
   const sketchRef = useRef<HTMLDivElement>(null);
@@ -24,8 +24,8 @@ const SketchExercise06: React.FC = () => {
           p.fill(0);
           p.noStroke();
 
-          let tiles = 100;
-          let tileSize = p.width / tiles;
+          const tiles = 100;
+          const tileSize = p.width / tiles;
 
           p.push();
           // p.rotateY(p.radians(p.frameCount));

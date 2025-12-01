@@ -23,11 +23,11 @@ export default class Particle {
   }
 
   noiseMove(noiseScale: number) {
-    let n = this.p.noise(
+    const n = this.p.noise(
       this.position.x * noiseScale,
       this.position.y * noiseScale
     );
-    let a = this.p.TAU * n;
+    const a = this.p.TAU * n;
 
     this.velocity.x = this.p.cos(a);
     this.velocity.y = this.p.sin(a);

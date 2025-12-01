@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
 import p5 from "p5";
+import React, { useEffect, useRef } from "react";
 import Particle from "./classes/particle";
 
 const SketchExercise04: React.FC = () => {
@@ -12,7 +12,7 @@ const SketchExercise04: React.FC = () => {
 
     if (typeof window !== "undefined") {
       sketch = new p5((p: p5) => {
-        let particles: Particle[] = [];
+        const particles: Particle[] = [];
         const quantity = 1000;
 
         const noiseScale = 0.01;
@@ -28,7 +28,7 @@ const SketchExercise04: React.FC = () => {
           p.background(0, 10);
 
           for (let i = 0; i < quantity; i++) {
-            let v = particles[i];
+            const v = particles[i];
 
             v.noiseMove(noiseScale);
             v.update();
